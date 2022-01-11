@@ -1,0 +1,27 @@
+.footer{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-top: 6rem;
+    bottom: 0;
+    text-align: center;
+    background-color: #76767762;
+    p{
+      margin: 0;
+      color:white;
+      font-weight: 500;
+      font-size: 0.9rem ;
+    }
+    .dev{
+      font-family: 'Courgette', cursive;
+      text-decoration: none;
+      font-weight: 600;
+      color:white;
+    }
+    .dev:hover{
+      opacity: 0.8;
+    }
+    .love{
+      color: #c1121f;
+    }
+  }

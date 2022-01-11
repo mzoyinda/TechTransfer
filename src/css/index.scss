@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: rgb(255, 255, 255);
+    background-color:#0e1217;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  h2 {
+    font-size:1rem;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.952);
+    text-decoration: none; 
+    &:hover{
+      color: rgba(255, 255, 255, 0.952);
+    }   
+  }
+
+@import "nav";
+@import "footer";
+
+.intro{
+  font-size: 1.05rem;
+  color: whitesmoke;
+  font-weight: 500;
+  line-height: 32px;
+  margin:1.7rem;
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+}
+.loading{
+  display: block;
+  text-align: center;
+ img{
+  width:15rem;
+  border-radius: 50%;
+ }
+}
+.data-container{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  position: relative;
+  margin: 50px;
+}
+.data-box{
+ padding: 20px;
+ padding-bottom: 10px;
+  border: 1px solid rgba(224, 239, 252, 0.219);
+  border-radius: 20px;
+  cursor: default;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: relative;
+}
+.title{
+  margin-top: 0.7rem;
+height: 100px;
+}
+.nasa-images{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: contain;
+  padding-bottom: 10px;
+}
+.flex-box{
+  display: flex;
+  color: #a1a1a8e1;
+  justify-content: space-between;
+}
+.Heart{
+  font-size: 1.7rem;
+  transition: 0.5s;
+}
+.animated-heart{
+  color:#ff0000;
+  font-size: 1.9rem;
+  transition: 0.5s;
+}

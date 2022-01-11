@@ -1,0 +1,32 @@
+.nav-container {
+    background:#0e1217;
+    border-bottom: 1px solid rgba(224, 239, 252, 0.219);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .brand{
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    &:hover{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+    h1{
+      margin-bottom: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  nav {
+  // margin: 0px auto;
+  padding: 10px;
+    #logo {
+      width: 5vmin;
+      margin-right: 10px;
+      object-fit: cover;
+        }
+  }
