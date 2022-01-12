@@ -176,6 +176,10 @@ nav #logo {
           justify-content: space-between;
 }
 
+span {
+  padding: 0.25rem;
+}
+
 .Heart {
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
