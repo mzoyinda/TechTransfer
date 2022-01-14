@@ -18,6 +18,6 @@ You will also see any lint errors in the console.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This website is deployed here: [https://techtransfer.netlify.app/](https://techtransfer.netlify.app/)
 
 
