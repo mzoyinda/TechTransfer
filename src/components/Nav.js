@@ -3,6 +3,8 @@ import React from 'react';
 
 const Nav = () => {
     return (
+        //creating the header || navbar
+
         <div className="nav-container">
             <nav>
                 <a href="/" className="brand"><img id="logo" src="/tech-transfer.png" alt="logo" />

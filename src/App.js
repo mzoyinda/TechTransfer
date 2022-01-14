@@ -6,7 +6,9 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-    <Switch>
+      <Switch>
+        {/* displaying my home component as the default landing page */}
+        
       <Route path="/" component={Home} exact />
   </Switch>
   </BrowserRouter>

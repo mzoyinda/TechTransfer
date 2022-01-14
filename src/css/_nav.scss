@@ -1,5 +1,9 @@
+//import font family from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Pacifico&display=swap');
+
+// all css styles relating to the navabr
 .nav-container {
-    background:#0e1217;
+    background:rgba(0,0,0,0.64);
     border-bottom: 1px solid rgba(224, 239, 252, 0.219);
     position: sticky;
     top: 0;
@@ -8,7 +12,7 @@
   .brand{
     color: rgb(255, 255, 255);
     display: flex;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Pacifico', cursive;
     align-items: center;
     &:hover{
       color: rgb(255, 255, 255);
@@ -16,13 +20,13 @@
     }
     h1{
       margin-bottom: 0;
-      font-size: 1.2rem;
+      font-size: 2rem;
+      color: whitesmoke;
       font-weight: 500;
     }
   }
 
   nav {
-  // margin: 0px auto;
   padding: 10px;
     #logo {
       width: 5vmin;

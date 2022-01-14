@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +36,7 @@ a:hover {
 }
 
 .nav-container {
-  background: #0e1217;
+  background: rgba(0, 0, 0, 0.64);
   border-bottom: 1px solid rgba(224, 239, 252, 0.219);
   position: -webkit-sticky;
   position: sticky;
@@ -48,7 +49,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Pacifico', cursive;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,7 +62,8 @@ a:hover {
 
 .brand h1 {
   margin-bottom: 0;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  color: whitesmoke;
   font-weight: 500;
 }
 
@@ -143,6 +145,7 @@ nav #logo {
 
 .data-box {
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.64);
   padding-bottom: 10px;
   border: 1px solid rgba(224, 239, 252, 0.219);
   border-radius: 20px;
@@ -176,20 +179,53 @@ nav #logo {
           justify-content: space-between;
 }
 
-span {
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.icons .share {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icons .share:hover {
+  opacity: 0.75;
+}
+
+.icons span {
   padding: 0.25rem;
 }
 
-.Heart {
+.icons .Heart {
   font-size: 1.7rem;
+  color: whitesmoke;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.animated-heart {
+.icons .Heart:hover {
+  opacity: 0.75;
+}
+
+.icons .animated-heart {
   color: #ff0000;
   font-size: 1.9rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.icons .animated-heart:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=index.css.map */
