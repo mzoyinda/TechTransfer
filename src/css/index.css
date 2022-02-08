@@ -8,7 +8,7 @@
 
 body {
   color: white;
-  background-color: #0e1217;
+  background-color: #973367;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -111,10 +111,9 @@ nav #logo {
 }
 
 .intro {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: whitesmoke;
-  font-weight: 500;
-  line-height: 32px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 1.7rem;
 }
 
@@ -145,7 +144,8 @@ nav #logo {
 
 .data-box {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color: #e9cbde;
+  color: black;
   padding-bottom: 10px;
   border: 1px solid rgba(224, 239, 252, 0.219);
   border-radius: 20px;
@@ -173,7 +173,7 @@ nav #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #a1a1a8e1;
+  color: #676769e1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -195,6 +195,7 @@ nav #logo {
 
 .icons .share {
   font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.842);
   cursor: pointer;
 }
 
@@ -208,7 +209,7 @@ nav #logo {
 
 .icons .Heart {
   font-size: 1.7rem;
-  color: whitesmoke;
+  color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
@@ -219,7 +220,7 @@ nav #logo {
 }
 
 .icons .animated-heart {
-  color: #ff0000;
+  color: #9b2308;
   font-size: 1.9rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;

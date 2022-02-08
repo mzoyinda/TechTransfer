@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Nav from './Nav';
-import Footer from './Footer';
+import Nav from '../Nav';
+import Footer from '../Footer';
 import { FaShareAlt } from 'react-icons/fa';
+import { useRef } from "react";
 
 const Home = () => {
+    const loveRef = useRef(null);
 
     //geting all saved localstorage items
     const saved = localStorage.getItem("likes");
@@ -50,8 +52,10 @@ const Home = () => {
 
     //toggle the like button
     const handleToggle = (e) => {
+      
         const { id } = e.currentTarget;
-        const heart = document.getElementById(id);
+        // const heart = document.getElementById(id);
+        const animate = loveRef.current
 
         //set the toggle state to true/false
         setToggle(!toggle);
@@ -65,11 +69,11 @@ const Home = () => {
         if (toggle) {
 
             //if toggle is true, make the like button animated
-            heart.classList.add("animated-heart"); 
+            animate.classList.add("animated-heart"); 
         } else {
 
               //else, remove the animation class
-            heart.classList.remove("animated-heart");
+              animate.classList.remove("animated-heart");
             
             //delete the unliked item from the local storage
             newLikes = [...newLikes.filter((like) => like.key !== id)];
@@ -79,29 +83,32 @@ const Home = () => {
         localStorage.setItem("likes", JSON.stringify(newLikes))
     }
 
-    //copy the image url
-    const copy = (e) => {
 
-        //made the image url the target
-        const { id } = e.currentTarget
-
-        //made the image url to be copied to the clipboard
-        navigator.clipboard.writeText(id)
-
-        //alert the user of the copied url.
-        window.alert("image url copied successfully. Try pasting it in a new tab 😉")
-    }
+    // const copy = (e) => {
+        
+    //     //made the image url the target
+    //     const { id } = e.currentTarget;
+        
+    //     //made the image url to be copied to the clipboard
+    //     const cop = navigator.clipboard.writeText(id);
+    //     console.log(cop)
+    // }
     
     return (
         <>
                 <Nav />
-            <p className="intro">NASA's Technology Transfer Program ensures that innovations developed for exploration and discovery are broadly available to the public. The NASA patent portfolio is available to benefit US citizens. Through partnerships and licensing agreements with industry, these patents ensure that NASA’s investments in pioneering research find secondary uses that benefit the economy, create jobs, and improve quality of life. This endpoint provides structured, searchable developer access to NASA’s patents, software, and technology spinoff descriptions that have been curated to support technology transfer. More information can be found at
-                <a href="https://technology.nasa.gov/">technology.nasa.gov</a> and
-                <a href="https://software.nasa.gov/">software.nasa.gov</a> and
-                <a href="https://spinoff.nasa.gov/">spinoff.nasa.gov</a>.
-            </p>
-      
-            <p className="intro">Some Examples are:</p>
+            <p className="intro">NASA's Technology Transfer Program ensures that innovations developed for exploration and discovery are broadly available to the public. The NASA patent portfolio is available to benefit US citizens. </p>
+            <p className="intro">
+            Through partnerships and licensing agreements with industry, these patents ensure that NASA’s investments in pioneering research find secondary uses that benefit the economy, create jobs, and improve quality of life. This endpoint provides structured, searchable developer access to NASA’s patents, software, and technology. spinoff descriptions that have been curated to support technology transfer
+                </p>
+                <p className="intro">
+                More information can be found at 
+                    <a href="https://technology.nasa.gov/"> technology.nasa.gov</a> and
+                    <a href="https://software.nasa.gov/"> software.nasa.gov</a> and
+                    <a href="https://spinoff.nasa.gov/"> spinoff.nasa.gov</a>.
+                </p>
+                
+            <b className="intro">Some Examples are:</b>
             
             {/* while the data is fetching, returning a spinning gif */}
 
@@ -132,10 +139,12 @@ const Home = () => {
                             {/* the icons */}
                                 <div className='icons'>
                                 <span
+                                    ref={loveRef}
                                     key={dataItem[0]} id={dataItem[0]} className={check ? "animated-heart" : "Heart"} onClick= {handleToggle}  >
                                     ❤ 
                                     </span>
-                                    <span id={dataItem[10]} onClick={copy}><FaShareAlt className="share" /></span>
+                                <a
+                                    href={dataItem[10]} target="_blank" rel="noreferrer"><FaShareAlt className="share" /></a>
                                  
                                 </div>
                             </div>

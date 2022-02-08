@@ -7,7 +7,7 @@
   }
   body {
     color: rgb(255, 255, 255);
-    background-color:#0e1217;
+    background-color:#973367;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -38,10 +38,11 @@
 // other general stylings 
 
 .intro{
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: whitesmoke;
-  font-weight: 500;
-  line-height: 32px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  // font-weight: 500;
+  // line-height: 32px;
   margin:1.7rem;
   a{
     color: white;
@@ -65,7 +66,8 @@
 }
 .data-box{
  padding: 20px;
- background-color: rgba(0,0,0,0.64);
+ background-color: #e9cbde;
+ color: black;
  padding-bottom: 10px;
   border: 1px solid rgba(224, 239, 252, 0.219);
   border-radius: 20px;
@@ -87,7 +89,7 @@ height: 100px;
 }
 .flex-box{
   display: flex;
-  color: #a1a1a8e1;
+  color: #676769e1;
   justify-content: space-between;
 }
 .icons{
@@ -98,6 +100,7 @@ height: 100px;
 
 .share{
   font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.842);
   cursor: pointer;
   &:hover{
     opacity: 0.75;
@@ -109,7 +112,7 @@ height: 100px;
 
    .Heart{
      font-size: 1.7rem;
-     color: whitesmoke;
+     color: white;
      transition: 0.5s;
      cursor: pointer;
      &:hover{
@@ -118,7 +121,7 @@ height: 100px;
    }
 
    .animated-heart{
-     color:#ff0000;
+     color:#9b2308;
      font-size: 1.9rem;
      transition: 0.5s;
      &:hover{
